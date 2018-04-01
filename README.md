@@ -1,4 +1,4 @@
-# Ready gulp-project
+# Deploy project
 
 1. Deploy a project
     'npm install'  - install all dependencies
