@@ -1,0 +1,98 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    title #БРАТСТВОКАЛЬМАРА
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='css/style.min.css')
+  body
+    section.intro
+        div.container
+            div.wrapper
+                div.info
+                    div.shop
+                        div.title
+                            p Нажми и найди#[br]ближайший магазин
+                        div.shop-choice
+                            div
+                                button
+                                p Вся Россия
+                            div
+                                button
+                                p Москва#[br] и Московская область
+                    div.photo
+                        div
+                            img(src="img/cloud.png", alt="#БратствоКальмара")
+                            p Добро пожаловать#[br] в #[span #]БратствоКальмара
+                        img(src="img/man.png", alt="#БратствоКальмара")
+                    div.entry
+                        p Вступи и получи#[br] #[span пять действительно вкусных]#[br] #[span рецептов с кальмарами]
+                        form(action="")
+                            input(type="text")
+                            button(type="submit") Вступить
+                            div
+                div.triangle-left
+                div.triangle-right
+
+    section.advantages
+        p.title  3 ключевых привелегий#[br] #[span #]БратствоКальмара:
+        div.advantages-wrapper
+            div.advantage
+                div.image-wrapper
+                    svg.icon
+                        use(xlink:href='../img/svg/icons-sprite.svg#star')
+                div.text-wrapper
+                    p.title Эксклюзивно.
+                    p Командорский кальмар - лучший сорт кальмара.
+            div.advantage
+                div.image-wrapper
+                    svg.icon
+                        use(xlink:href='../img/svg/icons-sprite.svg#alarm-clock')
+                div.text-wrapper
+                    p.title Быстро.
+                    p Всего 90 секунд и готово.
+            div.advantage
+                div.image-wrapper
+                    svg.icon
+                        use(xlink:href='../img/svg/icons-sprite.svg#tongue')
+                div.text-wrapper
+                    p.title Вкусно.
+                    p Мясо командорского кальмара самое нежное и приятное на вкус.
+
+    section.video
+        div.container
+            div.wrapper
+                p главное правило #[span #]БратствоКальмара
+                p.title #[span #]НЕПЕРЕВАРИ
+                div
+                    iframe(width='560', height='315', src='https://www.youtube.com/embed/PJOzxF8j3JM', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+
+    section.steps
+        div.step
+            div
+                svg.icon
+                    use(xlink:href='../img/svg/icons-sprite.svg#magnifying-glass')
+            p Найди
+        div.step
+            div
+                svg.icon
+                    use(xlink:href='../img/svg/icons-sprite.svg#shopping-cart')
+            p Купи
+        div.step
+            div
+                svg.icon
+                    use(xlink:href='../img/svg/icons-sprite.svg#squid')
+            p Разморозь
+        div.step
+            div
+                svg.icon
+                    use(xlink:href='../img/svg/icons-sprite.svg#cooking-pot-with-cover')
+            p Приготовь
+
+    section.wish
+        div.container
+            div.wrapper
+                img(src="img/man-with-pan.png", alt="#БратствоКальмара")
+                div
+                    img(src="img/cloud-bottom.png", alt="#БратствоКальмара")
+                    p Приятного #[br] аппетита!

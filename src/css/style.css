@@ -1,0 +1,653 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'GothamRegular';
+  src: url("../fonts/gothampro/regular/GothaProReg.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GothamBlack';
+  src: url("../fonts/gothampro/black/GothaProBla.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GothamBold';
+  src: url("../fonts/gothampro/bold/GothaProBol.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+.container {
+  width: 1180px;
+  margin: 0 auto; }
+  .container .wrapper {
+    background: url("../img/bg/bg-yellow.png") no-repeat; }
+
+section.intro, section.video, section.wish {
+  background: url("../img/bg/bg-default.jpg") no-repeat;
+  background-position-x: 48%;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+button, input {
+  outline: none;
+  border: none; }
+
+button {
+  cursor: pointer; }
+
+p {
+  text-transform: uppercase;
+  color: #010101;
+  text-align: center; }
+  p span {
+    color: #bd0b01; }
+
+section.intro {
+  overflow: hidden; }
+  section.intro .wrapper {
+    padding-top: 65px;
+    padding-bottom: 80px;
+    position: relative; }
+    section.intro .wrapper .info .shop {
+      padding-bottom: 50px;
+      margin-left: 332px; }
+      section.intro .wrapper .info .shop .title {
+        background: url("../img/bg/bg-title.png") no-repeat center/auto 100%;
+        width: 80%;
+        margin: 0 auto; }
+        section.intro .wrapper .info .shop .title p {
+          font-family: "GothamBold";
+          color: #fff;
+          font-size: 1.5rem;
+          padding: 20px 0;
+          margin-bottom: 35px; }
+      section.intro .wrapper .info .shop .shop-choice {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        position: relative;
+        z-index: 100; }
+        section.intro .wrapper .info .shop .shop-choice div {
+          width: 40%; }
+          section.intro .wrapper .info .shop .shop-choice div:first-child button {
+            background: #fff url("../img/bg/bg-carousel.png") no-repeat center/auto 100%;
+            -webkit-background-size: contain;
+                    background-size: contain; }
+          section.intro .wrapper .info .shop .shop-choice div:last-child button {
+            background: #fff url("../img/bg/bg-perekrestok.png") no-repeat center/auto 100%;
+            -webkit-background-size: contain;
+                    background-size: contain; }
+          section.intro .wrapper .info .shop .shop-choice div button {
+            width: 100%;
+            height: 80px;
+            overflow: hidden;
+            -webkit-border-radius: 40px;
+                    border-radius: 40px;
+            margin-bottom: 20px;
+            -webkit-transition: -webkit-box-shadow 0.5s;
+            transition: -webkit-box-shadow 0.5s;
+            -o-transition: box-shadow 0.5s;
+            transition: box-shadow 0.5s;
+            transition: box-shadow 0.5s, -webkit-box-shadow 0.5s; }
+            section.intro .wrapper .info .shop .shop-choice div button:hover {
+              -webkit-box-shadow: 0 5px 10px 7px rgba(235, 183, 10, 0.5);
+                      box-shadow: 0 5px 10px 7px rgba(235, 183, 10, 0.5); }
+            section.intro .wrapper .info .shop .shop-choice div button + p {
+              font-family: "GothamRegular";
+              line-height: 1.25rem; }
+    section.intro .wrapper .info .photo {
+      width: 55%;
+      position: absolute;
+      margin-left: -20%;
+      bottom: 0; }
+      section.intro .wrapper .info .photo > div {
+        position: relative;
+        z-index: 10;
+        margin-bottom: -100px;
+        left: 20%; }
+        section.intro .wrapper .info .photo > div p {
+          font-family: "GothamBold";
+          font-size: 1.5625rem;
+          -webkit-transform: rotate(8deg);
+              -ms-transform: rotate(8deg);
+                  transform: rotate(8deg);
+          position: absolute;
+          top: 33%;
+          left: 12%; }
+        section.intro .wrapper .info .photo > div img {
+          width: 70%;
+          -webkit-transform: scale(-1, 1);
+              -ms-transform: scale(-1, 1);
+                  transform: scale(-1, 1); }
+      section.intro .wrapper .info .photo > img {
+        z-index: 20;
+        position: relative;
+        width: 100%; }
+    section.intro .wrapper .info .entry {
+      padding-left: 332px;
+      padding-top: 30px;
+      padding-bottom: 55px;
+      background-color: #fff; }
+      section.intro .wrapper .info .entry p {
+        font-family: "GothamBold";
+        font-size: 3.125rem;
+        line-height: 2.8125rem;
+        margin-bottom: 60px; }
+        section.intro .wrapper .info .entry p span {
+          font-size: 2.1875rem; }
+          section.intro .wrapper .info .entry p span:nth-of-type(2) {
+            color: #010101;
+            font-size: 2.8125rem; }
+      section.intro .wrapper .info .entry form {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 100; }
+        section.intro .wrapper .info .entry form input, section.intro .wrapper .info .entry form button {
+          width: 100%; }
+        section.intro .wrapper .info .entry form input {
+          border: 2px solid  #d9d9d9;
+          height: 60px;
+          margin-bottom: 30px;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px;
+          padding-left: 20px;
+          font-family: "GothamRegular";
+          font-size: 1.625rem; }
+        section.intro .wrapper .info .entry form button {
+          background-color: #25941a;
+          color: #fff;
+          text-transform: uppercase;
+          font-family: "GothamBold";
+          font-size: 1.625rem;
+          padding: 15px 0;
+          -webkit-border-radius: 72px;
+                  border-radius: 72px;
+          -webkit-transition: -webkit-box-shadow 0.5s;
+          transition: -webkit-box-shadow 0.5s;
+          -o-transition: box-shadow 0.5s;
+          transition: box-shadow 0.5s;
+          transition: box-shadow 0.5s, -webkit-box-shadow 0.5s; }
+          section.intro .wrapper .info .entry form button:hover {
+            -webkit-box-shadow: 0 5px 5px 4px rgba(204, 204, 204, 0.5);
+                    box-shadow: 0 5px 5px 4px rgba(204, 204, 204, 0.5); }
+    section.intro .wrapper div.triangle-left {
+      position: absolute;
+      z-index: 30;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      margin-left: -350%;
+      border-right: 5000px solid transparent;
+      border-bottom: 300px solid #fff; }
+    section.intro .wrapper div.triangle-right {
+      position: absolute;
+      z-index: 30;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 0;
+      margin-right: -350%;
+      border-left: 5000px solid transparent;
+      border-bottom: 300px solid #fff; }
+
+section.advantages {
+  background-color: #fff;
+  padding: 60px 0;
+  position: relative; }
+  section.advantages > p.title {
+    font-family: "GothamBold";
+    margin-bottom: 60px;
+    font-size: 2.1875rem; }
+  section.advantages .advantages-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    section.advantages .advantages-wrapper .advantage {
+      background-image: url("../img/bg/bg-yellow.png");
+      -webkit-background-size: cover;
+              background-size: cover;
+      padding: 40px 0;
+      padding-left: 10px;
+      width: 33.3%;
+      -webkit-box-shadow: 0 4px 15px 5px rgba(157, 157, 157, 0.3);
+              box-shadow: 0 4px 15px 5px rgba(157, 157, 157, 0.3);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      section.advantages .advantages-wrapper .advantage:not(:last-child) {
+        margin-right: 20px; }
+      section.advantages .advantages-wrapper .advantage div.image-wrapper {
+        background-color: #fff;
+        border: 2px solid #bd0b01;
+        -webkit-border-radius: 100%;
+                border-radius: 100%;
+        padding: 20px;
+        position: relative;
+        z-index: 20; }
+        section.advantages .advantages-wrapper .advantage div.image-wrapper .icon {
+          width: 100px;
+          height: 100px;
+          fill: #bd0b01; }
+      section.advantages .advantages-wrapper .advantage div.text-wrapper {
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        z-index: 10;
+        padding: 10px 0;
+        padding-left: 60px;
+        padding-right: 20px;
+        margin-left: -50px; }
+        section.advantages .advantages-wrapper .advantage div.text-wrapper p {
+          text-align: left; }
+          section.advantages .advantages-wrapper .advantage div.text-wrapper p.title {
+            font-family: "GothamBold";
+            color: #bd0b01;
+            font-size: 1.5625rem;
+            margin-bottom: 10px;
+            text-align: left; }
+            section.advantages .advantages-wrapper .advantage div.text-wrapper p.title + p {
+              font-family: "GothamRegular";
+              font-size: 1.125rem;
+              line-height: 1.375rem;
+              text-transform: none; }
+
+section.video .wrapper {
+  padding-top: 30px;
+  padding-bottom: 60px; }
+  section.video .wrapper p {
+    font-family: "GothamBold";
+    font-size: 2.1875rem;
+    line-height: 5rem;
+    text-align: center; }
+    section.video .wrapper p.title {
+      font-size: 4.375rem;
+      margin-bottom: 50px; }
+  section.video .wrapper div {
+    background-color: #fff;
+    padding: 50px 80px;
+    text-align: center; }
+    section.video .wrapper div iframe {
+      width: 100%;
+      height: 400px; }
+
+section.steps {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0; }
+  section.steps div.step {
+    width: 25%; }
+    section.steps div.step:first-child div:before {
+      content: '1'; }
+    section.steps div.step:nth-child(2) div:before {
+      content: '2'; }
+    section.steps div.step:nth-child(3) div:before {
+      content: '3'; }
+    section.steps div.step:last-child div:before {
+      content: '4'; }
+    section.steps div.step div {
+      -webkit-border-radius: 100%;
+              border-radius: 100%;
+      background-color: #ffc70b;
+      position: relative;
+      text-align: center;
+      width: 200px;
+      height: 200px;
+      padding-top: 40px;
+      margin: 0 auto; }
+      section.steps div.step div .icon {
+        width: 120px;
+        height: 120px; }
+      section.steps div.step div:before {
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: #bd0b01;
+        -webkit-border-radius: 100%;
+                border-radius: 100%;
+        color: #fff;
+        font-family: "GothamBold";
+        font-size: 2.6875rem;
+        line-height: 3.125rem;
+        text-align: center; }
+    section.steps div.step p {
+      font-family: "GothamBold";
+      font-size: 1.875rem;
+      margin-top: 20px; }
+
+section.wish .wrapper {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  section.wish .wrapper > img {
+    position: relative;
+    z-index: 20;
+    width: 70%; }
+  section.wish .wrapper div {
+    position: relative;
+    z-index: 10;
+    margin-left: -22%; }
+    section.wish .wrapper div p {
+      font-family: "GothamBold";
+      font-size: 4.375rem;
+      position: absolute;
+      top: 30%;
+      left: 40%;
+      -webkit-transform: translate(-40%, -30%);
+          -ms-transform: translate(-40%, -30%);
+              transform: translate(-40%, -30%); }
+    section.wish .wrapper div img {
+      width: 100%; }
+
+@media (max-width: 992px) {
+  .container, .container.thin-container {
+    width: auto; } }
+
+@media (min-width: 993px) and (max-width: 1279px) {
+  .container, .container.thin-container {
+    width: 960px;
+    margin: 0 auto; } }
+
+@media (min-width: 993px) and (max-width: 1279px) {
+  section.intro .wrapper {
+    padding-bottom: 150px; }
+    section.intro .wrapper .info .shop .title {
+      -webkit-background-size: auto 90%;
+              background-size: auto 90%; }
+    section.intro .wrapper .info .shop .shop-choice div {
+      width: 40%; }
+    section.intro .wrapper .info .photo {
+      margin-left: -15%; }
+      section.intro .wrapper .info .photo > div {
+        margin-bottom: -100px;
+        left: 18%; }
+        section.intro .wrapper .info .photo > div p {
+          font-size: 1.25rem; }
+  section.advantages .advantages-wrapper .advantage div.image-wrapper .icon {
+    width: 70px;
+    height: 70px; }
+  section.advantages .advantages-wrapper .advantage div.text-wrapper p.title {
+    font-size: 1rem;
+    margin-bottom: 0; }
+    section.advantages .advantages-wrapper .advantage div.text-wrapper p.title + p {
+      font-size: 0.9375rem;
+      line-height: 0.9375rem; }
+  section.wish .wrapper > div p {
+    font-size: 3.125rem; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  section.intro .wrapper .info div.photo > div p {
+    font-size: 1.5rem; }
+  section.intro .wrapper .info div.photo > img {
+    width: 55%;
+    margin-left: 30%; }
+  section.video div.wrapper div iframe {
+    height: 400px; }
+  section.wish div.wrapper div p {
+    font-size: 3.75rem; } }
+
+@media (max-width: 992px) {
+  section.intro .wrapper {
+    padding-top: 18px;
+    padding-bottom: 90px; }
+    section.intro .wrapper .info .shop {
+      width: auto;
+      margin: 0;
+      padding: 0; }
+      section.intro .wrapper .info .shop div.title {
+        -webkit-background-size: auto 90%;
+                background-size: auto 90%; }
+        section.intro .wrapper .info .shop div.title p {
+          font-size: 0.75rem;
+          margin-bottom: 15px; }
+      section.intro .wrapper .info .shop .shop-choice {
+        margin-bottom: 35px; }
+        section.intro .wrapper .info .shop .shop-choice div {
+          width: 40%;
+          text-align: center; }
+          section.intro .wrapper .info .shop .shop-choice div:first-child {
+            margin-right: 10px; }
+          section.intro .wrapper .info .shop .shop-choice div button {
+            width: 100%;
+            height: 60px;
+            margin-bottom: 10px; }
+            section.intro .wrapper .info .shop .shop-choice div button + p {
+              font-size: 0.75rem; }
+    section.intro .wrapper .info .photo {
+      width: 100%;
+      position: relative;
+      margin: 0; }
+      section.intro .wrapper .info .photo > div {
+        margin: 0;
+        margin-bottom: -145px;
+        margin-left: -10%;
+        margin-top: 10px;
+        width: 50%; }
+        section.intro .wrapper .info .photo > div p {
+          font-size: 0.5625rem;
+          left: 25%;
+          top: 40%;
+          -webkit-transform: translate(-40%, -45%) rotate(-12deg);
+              -ms-transform: translate(-40%, -45%) rotate(-12deg);
+                  transform: translate(-40%, -45%) rotate(-12deg);
+          display: inline-table; }
+        section.intro .wrapper .info .photo > div img {
+          -webkit-transform: scale(-1, 1) rotate(17deg);
+              -ms-transform: scale(-1, 1) rotate(17deg);
+                  transform: scale(-1, 1) rotate(17deg);
+          width: 100%;
+          left: 0;
+          margin-left: -20%; }
+      section.intro .wrapper .info .photo > img {
+        width: 80%;
+        margin: 0;
+        margin-left: 20%;
+        margin-bottom: -5px; }
+    section.intro .wrapper .info .entry {
+      padding-left: 0;
+      background-color: #fff;
+      z-index: 100;
+      position: relative; }
+      section.intro .wrapper .info .entry p {
+        font-size: 1.6875rem;
+        line-height: 1.25rem;
+        margin-bottom: 30px; }
+        section.intro .wrapper .info .entry p span {
+          font-size: 1rem; }
+          section.intro .wrapper .info .entry p span:nth-of-type(2) {
+            font-size: 1.1875rem; }
+      section.intro .wrapper .info .entry form input, section.intro .wrapper .info .entry form button {
+        height: auto;
+        padding: 15px 0;
+        -webkit-border-radius: 40px;
+                border-radius: 40px;
+        font-size: 1rem; }
+      section.intro .wrapper .info .entry form input {
+        padding-left: 20px;
+        margin-bottom: 15px; }
+    section.intro .wrapper div.triangle-left {
+      border-right: 800px solid transparent;
+      border-bottom: 60px solid #fff;
+      margin-left: -10%; }
+    section.intro .wrapper div.triangle-right {
+      border-left: 800px solid transparent;
+      border-bottom: 60px solid #fff;
+      margin-right: -10%; }
+  section.advantages {
+    padding-top: 0;
+    padding-bottom: 50px; }
+    section.advantages p.title {
+      font-size: 1.125rem;
+      margin-bottom: 30px; }
+    section.advantages div.advantages-wrapper {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      section.advantages div.advantages-wrapper div.advantage {
+        width: 90%;
+        margin: 0 auto; }
+        section.advantages div.advantages-wrapper div.advantage:not(:last-child) {
+          margin-bottom: 30px;
+          margin-right: auto; }
+        section.advantages div.advantages-wrapper div.advantage div.image-wrapper .icon {
+          width: 90px;
+          height: 90px; }
+        section.advantages div.advantages-wrapper div.advantage div.text-wrapper p {
+          word-wrap: break-word; }
+          section.advantages div.advantages-wrapper div.advantage div.text-wrapper p.title {
+            font-size: 0.9375rem; }
+            section.advantages div.advantages-wrapper div.advantage div.text-wrapper p.title + p {
+              font-size: 0.8125rem;
+              line-height: 0.9375rem; }
+  section.video .wrapper {
+    padding: 25px 0;
+    margin-top: 0; }
+    section.video .wrapper p {
+      font-size: 0.75rem;
+      line-height: 2.1875rem; }
+      section.video .wrapper p.title {
+        font-size: 2.25rem;
+        margin-bottom: 10px; }
+    section.video .wrapper div {
+      width: 100%;
+      background-color: #fff;
+      padding: 30px 0; }
+      section.video .wrapper div iframe {
+        width: 90%;
+        height: 200px; }
+  section.steps {
+    display: block;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    width: 300px;
+    margin: 0 auto; }
+    section.steps:after, section.steps:before {
+      content: '';
+      display: block;
+      clear: both; }
+    section.steps div.step {
+      width: auto; }
+      section.steps div.step:after, section.steps div.step:before {
+        content: '';
+        display: block;
+        clear: both; }
+      section.steps div.step:nth-child(even) {
+        float: right; }
+      section.steps div.step:nth-child(odd) {
+        float: left; }
+      section.steps div.step:not(:last-child) {
+        margin-right: 0; }
+      section.steps div.step:not(:first-child) {
+        margin-top: 20%; }
+      section.steps div.step div.icon-wrapper {
+        width: 130px;
+        height: 130px; }
+        section.steps div.step div.icon-wrapper:before {
+          width: 32px;
+          height: 32px;
+          font-size: 1.6875rem;
+          line-height: 2rem; }
+      section.steps div.step p {
+        font-size: 1.1875rem;
+        margin-top: 20px; }
+  section.wish .wrapper {
+    padding-top: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    section.wish .wrapper > img {
+      width: 100%;
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2; }
+    section.wish .wrapper div {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      margin-left: 10%;
+      margin-bottom: -25%; }
+      section.wish .wrapper div p {
+        font-size: 2.25rem; }
+      section.wish .wrapper div img {
+        width: 100%; } }

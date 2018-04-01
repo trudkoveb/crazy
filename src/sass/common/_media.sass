@@ -1,0 +1,261 @@
+// container width
+@media (#{$max_tablets})
+    .container, .container.thin-container
+        width: auto
+
+@media (#{$min_tablets}) and (#{$max_laptop})
+    .container, .container.thin-container
+        width: 960px
+        margin: 0 auto
+
+// styles
+@media (#{$min_tablets}) and (#{$max_laptop})
+    section.intro
+        .wrapper
+            padding-bottom: 150px
+            .info
+                .shop
+                    .title
+                        background-size: auto 90%
+                    .shop-choice
+                        div
+                            width: 40%
+                .photo
+                    margin-left: -15%
+                    > div
+                        margin-bottom: -100px
+                        left: 18%
+                        p
+                            font-size: 20px
+
+    section.advantages
+        .advantages-wrapper
+            .advantage
+                div.image-wrapper
+                    .icon
+                        width: 70px
+                        height: 70px
+                div.text-wrapper
+                    p
+                        &.title
+                            font-size: 16px
+                            margin-bottom: 0
+                            + p
+                                font-size: 15px
+                                line-height: 15px
+
+    section.wish
+        .wrapper
+            > div
+                p
+                    font-size: 50px
+
+@media (#{$min_ipad}) and (#{$max_tablets})
+    section.intro
+        .wrapper
+            .info
+                div.photo
+                    > div
+                         p
+                             font-size: 24px
+                    > img
+                        width: 55%
+                        margin-left: 30%
+
+    section.video
+        div.wrapper
+            div
+                iframe
+                    height: 400px
+
+    section.wish
+        div.wrapper
+            div
+                p
+                    font-size: 60px
+
+@media (#{$max_tablets})
+    section.intro
+        .wrapper
+            padding-top: 18px
+            padding-bottom: 90px
+            .info
+                .shop
+                    width: auto
+                    margin: 0
+                    padding: 0
+                    div.title
+                        background-size: auto 90%
+                        p
+                            font-size: 12px
+                            margin-bottom: 15px
+                    .shop-choice
+                        margin-bottom: 35px
+                        div
+                            width: 40%
+                            text-align: center
+                            &:first-child
+                                margin-right: 10px
+                            button
+                                width: 100%
+                                height: 60px
+                                margin-bottom: 10px
+                                + p
+                                    font-size: 12px
+                .photo
+                    width: 100%
+                    position: relative
+                    margin: 0
+                    > div
+                        margin: 0
+                        margin-bottom: -145px
+                        margin-left: -10%
+                        margin-top: 10px
+                        width: 50%
+                        p
+                            font-size: 9px
+                            left: 25%
+                            top: 40%
+                            transform: translate(-40%, -45%) rotate(-12deg)
+                            display: inline-table
+                        img
+                            transform: scale(-1, 1) rotate(17deg)
+                            width: 100%
+                            left: 0
+                            margin-left: -20%
+                    > img
+                         width: 80%
+                         margin: 0
+                         margin-left: 20%
+                         margin-bottom: -5px
+                .entry
+                    padding-left: 0
+                    background-color: #fff
+                    z-index: 100
+                    position: relative
+                    p
+                        font-size: 27px
+                        line-height: 20px
+                        margin-bottom: 30px
+                        span
+                            font-size: 16px
+                            &:nth-of-type(2)
+                                font-size: 19px
+                    form
+                        input, button
+                            height: auto
+                            padding: 15px 0
+                            border-radius: 40px
+                            font-size: 16px
+                        input
+                            padding-left: 20px
+                            margin-bottom: 15px
+            div.triangle-left
+                border-right: 800px solid transparent
+                border-bottom: 60px solid #fff
+                margin-left: -10%
+            div.triangle-right
+                border-left: 800px solid transparent
+                border-bottom: 60px solid #fff
+                margin-right: -10%
+
+    section.advantages
+        padding-top: 0
+        padding-bottom: 50px
+        p.title
+            font-size: 18px
+            margin-bottom: 30px
+        div.advantages-wrapper
+            flex-wrap: wrap
+            div.advantage
+                width: 90%
+                margin: 0 auto
+                &:not(:last-child)
+                    margin-bottom: 30px
+                    margin-right: auto
+                div.image-wrapper
+                    .icon
+                        width: 90px
+                        height: 90px
+                div.text-wrapper
+                    p
+                        word-wrap: break-word
+                        &.title
+                            font-size: 15px
+                            + p
+                                font-size: 13px
+                                line-height: 15px
+
+    section.video
+        .wrapper
+            padding: 25px 0
+            margin-top: 0
+            p
+                font-size: 12px
+                line-height: 35px
+                &.title
+                    font-size: 36px
+                    margin-bottom: 10px
+            div
+                width: 100%
+                background-color: #fff
+                padding: 30px 0
+                iframe
+                    width: 90%
+                    height: 200px
+
+    section.steps
+        display: block
+        padding-top: 45px
+        padding-bottom: 55px
+        width: 300px
+        margin: 0 auto
+        &:after, &:before
+            content: ''
+            display: block
+            clear: both
+        div.step
+            width: auto
+            &:after, &:before
+                content: ''
+                display: block
+                clear: both
+            &:nth-child(even)
+                float: right
+            &:nth-child(odd)
+                float: left
+            &:not(:last-child)
+                margin-right: 0
+            &:not(:first-child)
+                margin-top: 20%
+            div.icon-wrapper
+                width: 130px
+                height: 130px
+                &:before
+                    width: 32px
+                    height: 32px
+                    font-size: 27px
+                    line-height: 32px
+            p
+                font-size: 19px
+                margin-top: 20px
+
+    section.wish
+        .wrapper
+            padding-top: 25px
+            flex-direction: column
+            > img
+                width: 100%
+                order: 2
+            div
+                order: 1
+                margin-left: 10%
+                margin-bottom: -25%
+                p
+                    font-size: 36px
+                img
+                    width: 100%
+
+
+
+
