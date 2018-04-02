@@ -45,7 +45,7 @@ gulp.task('px-rem', function() {
 gulp.task('min-image', () =>
     gulp.src('src/images/*/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/img'))
 );
 
 gulp.task('pug-html', function buildHTML() {
@@ -56,8 +56,6 @@ gulp.task('pug-html', function buildHTML() {
 
 gulp.task('min-js', function() {
     return gulp.src([
-            'src/libs/jquery/dist/jquery.min.js',
-            'src/libs/slick/dist/slick.min.js'
         ])
     .pipe(concat('libs.min.js'))
     .pipe(uglifyJs())
@@ -74,7 +72,7 @@ gulp.task('min-css', ['sass'] , function() {
 });
 
 gulp.task('watch', ['browser-sync'], function() {
-    gulp.watch('src/sass/**/*.sass', ['sass']);
+    gulp.watch('src/sass/**/*.sass', ['sass', 'min-css']);
     gulp.watch('src/views/*.pug', ['pug-html']);
     gulp.watch('src/js/**/*.js', browserSync.reload);
     gulp.watch('src/**/*.html', browserSync.reload);
